@@ -1,0 +1,83 @@
+#container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  background-color: white;
+  box-shadow: 0 0 4px black;
+  padding: 5%;
+}
+body{
+    display: flex;
+    justify-content: center;
+   margin-top: 10%;
+}
+#error{
+  width: 100%;
+ color: white;
+ position: relative;
+ height: 30px; 
+  background-color: orangered;
+text-align: center;
+ padding-top: 1%; 
+ display: none;
+}
+#submit{
+    margin-top: 1.0rem;
+    background-color: green;
+    color: white;
+    height: 30px;
+    border: none;
+    display: none;
+}
+#email{
+   height: 30px;
+   width: 100%;
+}
+#icons{
+    position: absolute;
+    right: 5%;
+   top:50%;
+   transform: translateY(-50%);
+   
+}
+#input{
+  position: relative;
+  margin-bottom: 1.0rem;
+  display: flex;
+}
+#error::after{
+  content: '';
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: -4px;
+  right: 28px;
+  background-color: orangered;
+  display: inline-block;
+  transform: rotate(45deg);
+}
+#correct{
+  font-size: 1.6rem;
+  color: green;
+  display: none;
+}
+#excla{
+  font-size: 1.6rem;
+  color: orangered;
+  display: none;
+}
+#email.makosa{
+  border-color: orangered;
+  background-color: rgba(255, 69, 0, 0.5);
+  border: none;
+ 
+}
+#email.correct{
+  background-color: green;
+  background-color: rgba(8, 192, 8,0.5);
+  border: none;
+
+}
